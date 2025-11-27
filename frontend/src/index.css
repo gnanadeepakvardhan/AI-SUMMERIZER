@@ -1,0 +1,89 @@
+/* GLOBAL STYLES */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #0d0d0d;
+  color: white;
+  font-family: "Inter", sans-serif;
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+/* MAIN CONTAINER */
+#root {
+  width: 100%;
+  max-width: 700px;
+}
+
+/* TITLE */
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+/* TEXTAREA */
+textarea {
+  width: 100%;
+  height: 160px;
+  padding: 15px;
+  border-radius: 10px;
+  border: 2px solid #333;
+  background: #1c1c1c;
+  color: white;
+  font-size: 16px;
+  outline: none;
+  transition: 0.3s;
+}
+
+textarea:focus {
+  border-color: #7c5cff;
+  background: #222;
+}
+
+/* BUTTON */
+button {
+  width: 100%;
+  margin-top: 15px;
+  padding: 15px;
+  background: linear-gradient(90deg, #7c5cff, #5f2cff);
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  opacity: 0.8;
+  transform: scale(1.02);
+}
+
+/* SUMMARY BOX */
+.summary-box {
+  margin-top: 30px;
+  background: #1a1a1a;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #333;
+  animation: popIn 0.3s ease-in-out;
+}
+
+/* ANIMATIONS */
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(-10px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
+@keyframes popIn {
+  from {opacity: 0; transform: scale(0.95);}
+  to {opacity: 1; transform: scale(1);}
+}
